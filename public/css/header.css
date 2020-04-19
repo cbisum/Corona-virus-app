@@ -1,0 +1,25 @@
+nav{
+    width: 100%;
+    background-color:wheat;
+    margin: 4px;
+    border-radius: 15px;
+    border:1px solid black;
+    box-shadow:2px 1px 8px gray;
+}
+nav>ul{
+    margin: auto;
+    width: 50%;
+}
+
+ul>li{
+    display: inline-block;
+    padding: 20px;
+}
+
+li>a,li>h1>a{
+    color:blue
+}
+
+li>a:hover,li>h1>a:hover{
+    text-decoration: none;
+}

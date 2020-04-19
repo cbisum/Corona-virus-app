@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Corona App</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body>
+    {{>header}}
+
+    <div id="main" class="container">
+        <div id="form">
+            <form action="">
+        <input placeholder="Please Enter your Country Name">
+        <button>Enter</button>
+    
+     </form>
+
+        </div>
+     
+
+         <div id="countryName">
+            <h1 id="viewCountry">World</h1>
+            <img src="img/globe.jpg" alt="Country flag">
+        </div>
+      <div id="viewValue">
+          <div id="case">
+              <h1 id="viewtotal">Loading...</h1>
+              <p>Total Cases<p>
+          </div>
+          <div id="recov">
+              <h1 id="viewrecovered">Loading...</h1>
+              <p>Recovered</p>
+          </div>
+          <div id="active">
+              <h1 id="viewactive">Loading...</h1>
+              <p>Active</p>
+          </div>
+          <div id="death">
+              <h1 id="viewdeath">Loading...</h1>
+              <p>Deaths</p>
+          </div>
+      </div>
+
+    
+
+    </div>
+
+    {{>footer}}
+
+    
+    
+
+   <script src="/js/app.js"></script> 
+</body>
+</html>
