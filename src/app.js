@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const port = process.env.PORT|| 3000;
 const hbs = require('hbs')
 const serverData = require('../Apicall/totalCases')
 
@@ -51,6 +52,6 @@ app.get('*',(req,res)=>{
     res.render('404')
 })
 
-app.listen(3000,()=>{
-    console.log('app is running')
+app.listen(port,()=>{
+    console.log('app is running at port',port)
 })

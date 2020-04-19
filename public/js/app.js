@@ -44,7 +44,7 @@ weatherForm.addEventListener('submit',(e)=>{
 
 
     
-    fetch(`http://localhost:3000/corona?address=${location}`).then((response)=>{
+    fetch(`/corona?address=${location}`).then((response)=>{
         response.json().then((data)=>{
             if(data.error){
                 alert(data.error)
