@@ -32,8 +32,7 @@ app.get('/corona',(req,res)=>{
     }
     serverData(req.query.address,(error,data)=>{
         if(error){
-            return res.send(error);
-            
+            res.send(error);
         }else{
             res.send(data)
         }
